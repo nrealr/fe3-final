@@ -16,11 +16,7 @@ const Card = ({ item }) => {
     <div className="card">
       {/* En cada card deberan mostrar en name - username y el id */}
       <Link to={linkDoc}>
-        <img
-          className="cardImg"
-          src="../public/images/doctor.jpg"
-          alt="Doctor"
-        />
+        <img className="cardImg" src="/public/images/doctor.jpg" alt="Doctor" />
       </Link>
 
       <h3>
