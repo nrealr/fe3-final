@@ -26,7 +26,7 @@ h1{
 nav{
   display: flex;
   width: 80vw;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   padding: 1rem;
 }
 
@@ -92,6 +92,28 @@ form{
   height: auto;
   flex-wrap: wrap;
   margin: 0 auto;
+}
+
+.cardImg{
+  width: 11rem;
+}
+
+.contact{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detail{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detail > img{
+  width: 20rem
 }
 
 table {
