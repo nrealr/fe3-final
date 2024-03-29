@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { routes } from "./utils/routes";
 import { useContextGlobal } from "./utils/global.context";
+import docImg from "/public/images/doctor.jpg";
 
 const Card = ({ item }) => {
   const { name, username, id } = item;
@@ -16,7 +17,7 @@ const Card = ({ item }) => {
     <div className="card">
       {/* En cada card deberan mostrar en name - username y el id */}
       <Link to={linkDoc}>
-        <img className="cardImg" src="/public/images/doctor.jpg" alt="Doctor" />
+        <img className="cardImg" src={docImg} alt="Doctor" />
       </Link>
 
       <h3>

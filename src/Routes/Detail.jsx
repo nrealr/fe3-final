@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import docImg from "/public/images/doctor.jpg";
 
 //Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 
@@ -23,7 +24,7 @@ const Detail = () => {
       <h1>Detail Dentist id </h1>
       {/* aqui deberan renderizar la informacion en detalle de un user en especifico */}
       {/* Deberan mostrar el name - email - phone - website por cada user en especifico */}
-      <img src="/public/images/doctor.jpg" alt="Doctor" />
+      <img src={docImg} alt="Doctor" />
       <h2>{doctor.name}</h2>
       <h3>{doctor.email}</h3>
       <h3>{doctor.phone}</h3>
